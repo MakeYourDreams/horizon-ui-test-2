@@ -9,12 +9,12 @@ export const ProtectedRoute = ({ ...rest }) => {
   let { user } = useAuth();
   if (!user || !user.token || user.token === "") {
     return (
-      <SweetAlert
-        title="You must be signed in!"
-        onCancel={() => history.push("/auth/sign-in")}
-        onConfirm={() => history.push("/auth/sign-in")}
-        confirmBtnCssClass={"px-5"}
-      />
+      //<SweetAlert
+      //  title="You must be signed in!"
+      //  onCancel={() => history.push("/auth/sign-in")}
+      //  onConfirm={() => history.push("/auth/sign-in")}
+      //  confirmBtnCssClass={"px-5"}
+    //  />
     );
   }
 
